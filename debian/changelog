@@ -1,0 +1,24 @@
+celery (2.4.6-1ubuntu0.1) precise-proposed; urgency=low
+
+  * SRU: Drop issue tracker for doc generation as it adds a build-dep
+    that it is not necessary for this package to build. This allows us to
+    MIR celery without MIR'ing the dependency. (LP: #1177855)
+    - debian/control: Drop build-dep on python-sphinxcontrib.issuetracker,
+    - debian/patches/ubuntu-drop-issuetracker.patch: Drop import in doc
+      generation.
+
+ -- Andres Rodriguez <andreserl@ubuntu.com>  Wed, 15 May 2013 10:39:29 -0400
+
+celery (2.4.6-1) unstable; urgency=low
+
+  * New upstream release.
+    Fixes: CVE-2011-4356
+  * Update copyright to 2012.
+
+ -- Michael Fladischer <FladischerMichael@fladi.at>  Mon, 02 Jan 2012 12:45:47 +0100
+
+celery (2.4.5-1) unstable; urgency=low
+
+  * Initial release (Closes: #526350)
+
+ -- Michael Fladischer <FladischerMichael@fladi.at>  Tue, 27 Dec 2011 11:57:41 +0100
